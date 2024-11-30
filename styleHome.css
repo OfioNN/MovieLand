@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('img/tlo2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+nav{
+    height: 65px;
+    width: 100%;
+    display: flex;
+}
+
+#logo{
+    font-family: "Rubik Wet Paint", system-ui;
+    color: #c00021;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#logIn{
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding-right: 12px;
+    padding-left: 12px;
+    font-weight: 600;
+    background-color: #c00021;
+    transition: all 0.2s ease-in-out;
+    border-radius: 0 0 20px 20px;
+}
+
+#logIn:hover{
+    background-color: #0466c8;
+    cursor: pointer;
+}
+
+#text{
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 100px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #c00021;
+}
+
+#buttons{
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#buttons a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#register{
+    background-color: #c00021;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+#register:hover{
+    background-color: #0466c8;
+    cursor: pointer;
+    transform: scale(1.2);
+
+}
+
+#info{
+    background-color: #c00021;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+#info:hover{
+    background-color: #0466c8;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0 10px 0;
+}

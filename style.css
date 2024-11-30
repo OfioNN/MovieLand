@@ -1,0 +1,984 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.no-scroll {
+    overflow: hidden; /* Blokada przewijania */
+  }
+
+body{
+    background-color: #000814;
+}
+
+#container{
+    font-size: 24px;
+    background-color: #000814;
+    height: 1030px;
+}
+
+#navigationBlock{
+    background-color: #000814;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-right: 6px;
+    background-color: #000000;
+    align-items: center;
+}
+
+
+nav .navTile:hover {
+    transform: rotate(0deg) scale(1.1);
+
+}
+
+nav .navTile a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+nav .navTile a:hover{
+    color: #0466c8;
+}
+
+.movieCategoryContainer {
+    display: flex;
+}
+
+.movieCategory{
+    font-family: "Rubik Wet Paint", system-ui;
+    color: #FFFFFF;
+    margin-top: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: 900;
+    width: fit-content;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-left: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.movieCategory:first-child{
+    padding-top: 50px;
+}
+
+
+.navTile{
+    margin-top: 10px;
+    color: #ffffff;
+    height: 25px;
+    text-align: center;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.5s ease-in-out;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
+
+nav{
+    background-color: #000000;
+    height: 75px;
+    width: 100%;
+    display: flex;
+}
+
+.movieTable{
+    position: relative;
+    overflow: hidden;
+    display: flex; /*not important*/
+    /* overflow-x: auto; */
+    scroll-behavior: smooth;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 440px;
+    /* margin-top: 10px; */
+    /* margin-bottom: 50px; */
+    /* white-space: nowrap; */
+}
+
+.movieTableOscars2024{
+    /* position: relative; */
+    /* overflow: hidden; */
+    display: flex;
+    /* overflow-x: auto; */
+    /* scroll-behavior: smooth; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* width: 100%; */
+    /* height: 440px; */
+    /* margin-top: 10px; */
+    /* margin-bottom: 50px; */
+    /* white-space: nowrap; */
+}
+
+.movieTableOscars2023{
+    display: flex;
+    display: none;
+}
+
+.movieTableOscars2022{
+    display: flex;
+    display: none;
+}
+
+.movieTableOscars2021{
+    display: flex;
+    display: none;
+}
+
+.movieTableOscars2020{
+    display: flex;
+    display: none;
+}
+
+.movieTile{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    height: 375px;
+    width: 235px;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out;
+    display: inline-block;
+}
+
+.movieTile:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.movieRank{
+    position: absolute;
+    float: left;
+    background-color: #444444;
+    height: 140px;
+    width: 80px;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+    margin-left: -50px;
+    z-index: 100;
+}
+
+#logo{
+    font-family: "Rubik Wet Paint", system-ui;
+    color: #c00021;
+    font-size: 36px;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+    display: flex;
+    align-items: center;
+    
+}
+
+.pre-btn{
+    position: absolute;
+    background: rgba(0, 8, 20, .3);
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+    padding-top: 8px;
+    padding-left: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    /* top: 300px; */
+    left: 20px;
+    top: 330px;
+    z-index: 10;
+    /* margin-bottom: 20px; */
+}
+
+.pre-btn:hover{
+    background: rgba(0, 8, 20, .6);
+}
+
+.nxt-btn{
+    position: absolute;
+    background: rgba(0, 8, 20, .3);
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+    padding-top: 8px;
+    padding-left: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    right: 20px;
+    /* top: 300px; */
+    top: 330px;
+    z-index: 10;
+    /* margin-bottom: 20px; */
+}
+
+.nxt-btn:hover{
+    background: rgba(0, 8, 20, .6);
+}
+
+/* #movieImage{ */
+    /* ( x - poziomo / y - pionowo) (Półokręg)*/ 
+    /*clip-path: polygon(0% 100%, 0% 55%, 15% 40%, 0% 25%, 0% 0%, 100% 0%, 100% 100%);*/
+    /* float: left; */
+    /*margin-top: -110px;*/
+/* } */
+
+
+.year{
+    /* display: flex; */
+    font-size: 20px;
+    font-weight: 900;
+    /* margin-top: 1px; */
+    /* margin-left: 10px; */
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.infoTrailer{
+    display: flex;
+}
+
+.styleTable{
+    /* display: flex; */
+    width: 50%;
+    height: 248px;
+    /* justify-content: center; */
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+    /* margin-left: 20px; */
+    /* margin-right: 20px;/ */
+}
+
+/*TABELA*/
+table{
+    /* width: 100%; */
+    font-family: "Roboto", sans-serif;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 425px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0;
+    /* border: 2px solid #fe7; */
+}
+
+th, td{
+    border: 1px solid #222222;
+    padding: 10px;
+    text-align: left;
+    font-size: 15px;
+    font-style: italic;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #222222;
+}
+
+.styleTrailer{
+    width: 410px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    box-shadow: #c00021 0px 0px 8px 5px;
+
+}
+
+.styleTrailer:hover{
+    opacity: 0.8;
+}
+
+.description{
+    /* display: flex; */
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+}
+
+.close{
+    font-size: 28px;
+    font-weight: 900;
+    position: absolute;
+    right: 5px;
+}
+
+.close:hover{
+    cursor: pointer;
+}
+
+.movieInfo{
+    color: white;
+}
+
+#footer{
+    border-top: #c00021 dotted 0.5px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 15px;
+    clear: both;
+}
+
+#login{
+    margin-top: 100px;
+    width: 204px;
+    padding: 20px;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0466c8;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #077d01;
+}
+
+input[type=email]{
+    display: block;
+    height: 25px;
+    width: 195px;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+input[type=password]{
+    display: block;
+    height: 25px;
+    width: 195px;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+input[type=submit]{
+    display: block;
+    height: 40px;
+    width: 204px;
+    margin-top: 30px;
+    background-color: #70e000;
+    border-radius: 10px;
+    border: #000000;
+}
+
+#OscarsYear {
+    width: 60px;
+    height: 40px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #000814;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-top: 50px;
+    right: 20px;
+    position: absolute;
+}
+
+#signUp{
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+#signUp a{
+    color: #70e000;
+    text-decoration: none;
+}
+
+/* MODAL */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 15; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0);
+    /* background-color: rgba(0,0,0,0.95); Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+    opacity: 0.95;
+    animation: opacityAnim 0.5s ease-in-out; /* Dodanie animacji */
+}
+
+/* ANIMATIONS */
+/* MODAL BACKGROUND */
+/* Nowa płynna animacja */
+@keyframes opacityAnim {
+    0% {
+      opacity: 0; /* Ukryty */
+    }
+    100% {
+      opacity: 0.95; /* W pełni widoczny */
+    }
+  }
+
+.modalOut {
+    animation: opacityAnimOut 0.35s ease-out; /* Animacja przy zamykaniu */
+  }
+
+  /* Kluczowe klatki dla animacji wyjścia */
+@keyframes opacityAnimOut {
+    0% {
+      opacity: 0.95;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  /* MODAL WINDOW */
+/* Nowa płynna animacja */
+@keyframes popup {
+    0% {
+      transform: scale(0.1); /* Start bardzo mały */
+      opacity: 0; /* Ukryty */
+    }
+    100% {
+      transform: scale(1); /* Pełna skala */
+      opacity: 1; /* W pełni widoczny */
+    }
+  }
+
+.popupHide {
+    animation: popup-out 0.35s ease-out; /* Animacja przy zamykaniu */
+  }
+
+  /* Kluczowe klatki dla animacji wyjścia */
+@keyframes popup-out {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+  }
+
+/* MOVIES */
+
+/* OPPENHEIMER: */
+.infoAboutMovieOppenheimer{
+    position: fixed;
+    /* position: relative; */
+    text-align: center;
+    background-color: #000;
+    height: 75%;
+    width: 70%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    top: 17%;
+    left: 15%;
+    z-index: 20;
+    display: none;
+    box-shadow: #c00021 0px 0px 8px 5px;
+    animation: popup 0.5s ease-in-out; /* Dodanie animacji */
+}
+
+
+#titleOppenheimer{
+    font-family: "Roboto", sans-serif;
+    color: #f1642f;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 32px;
+    font-weight: 900;
+    margin-top: 5px;
+    /* margin-left: 10px; */
+    text-align: center;
+    /* justify-content: center; */
+    /* display: flex; */
+}
+
+.positionImageOppenheimer{
+    width: 400px;
+    height: 200px;
+    /* justify-content: center; */
+    margin-top: -150px;
+}
+
+.watchOppenheimer{
+    z-index: 900;
+    color: white;
+    font-size: 42px;
+    font-weight: 900;
+    position: absolute;
+    margin-top: 40px;
+    right: 22%;
+}
+
+/* POOR THINGS: */
+.infoAboutMoviePoorThings{
+    position: fixed;
+    /* position: relative; */
+    text-align: center;
+    background-color: #000;
+    height: 75%;
+    width: 70%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    top: 17%;
+    left: 15%;
+    z-index: 20;
+    display: none;
+    box-shadow: #c00021 0px 0px 8px 5px;
+    animation: popup 0.5s ease-in-out; /* Dodanie animacji */
+}
+
+#titlePoorThings{
+        font-family: "Roboto", sans-serif;
+        color: #8eb7cd;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 32px;
+        font-weight: 900;
+        margin-top: 5px;
+        /* margin-left: 10px; */
+        text-align: center;
+        /* justify-content: center; */
+        /* display: flex; */
+}
+
+.positionImagePoorThings{
+    width: 400px;
+    height: 200px;
+    /* justify-content: center; */
+    margin-top: -150px;
+    margin-left: -28px;
+}
+
+.watchPoorThings{
+    z-index: 900;
+    color: white;
+    font-size: 42px;
+    font-weight: 900;
+    position: absolute;
+    margin-top: 40px;
+    right: 22%;
+}
+
+/* THE ZONE OF INTEREST: */
+.infoAboutMovieTZOF{
+    position: fixed;
+    /* position: relative; */
+    text-align: center;
+    background-color: #000;
+    height: 75%;
+    width: 70%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    top: 17%;
+    left: 15%;
+    z-index: 20;
+    display: none;
+    box-shadow: #c00021 0px 0px 8px 5px;
+    animation: popup 0.5s ease-in-out; /* Dodanie animacji */
+}
+
+#titleTZOF{
+        font-family: "Roboto", sans-serif;
+        color: #ff1f37;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 32px;
+        font-weight: 900;
+        margin-top: 5px;
+        /* margin-left: 10px; */
+        text-align: center;
+        /* justify-content: center; */
+        /* display: flex; */
+}
+
+.positionImageTZOF{
+    width: 400px;
+    height: 200px;
+    /* justify-content: center; */
+    margin-top: -150px;
+    /* margin-left: -28px; */
+}
+
+.watchTZOF{
+    z-index: 900;
+    color: white;
+    font-size: 42px;
+    font-weight: 900;
+    position: absolute;
+    margin-top: 40px;
+    right: 22%;
+}
+
+/* BARBIE: */
+.infoAboutMovieBarbie{
+    position: fixed;
+    /* position: relative; */
+    text-align: center;
+    background-color: #000;
+    height: 75%;
+    width: 70%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    top: 17%;
+    left: 15%;
+    z-index: 20;
+    display: none;
+    box-shadow: #c00021 0px 0px 8px 5px;
+    animation: popup 0.5s ease-in-out; /* Dodanie animacji */
+}
+
+#titleBarbie{
+        font-family: "Roboto", sans-serif;
+        color: #f200a2;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 32px;
+        font-weight: 900;
+        margin-top: 5px;
+        /* margin-left: 10px; */
+        text-align: center;
+        /* justify-content: center; */
+        /* display: flex; */
+}
+
+.positionImageBarbie{
+    width: 400px;
+    height: 200px;
+    /* justify-content: center; */
+    margin-top: -60px;
+    /* margin-left: -28px; */
+}
+
+.watchBarbie{
+    z-index: 900;
+    /* color: white; */
+    font-size: 42px;
+    font-weight: 900;
+    position: absolute;
+    margin-top: -40px;
+    right: 22%;
+}
+
+/* THE HOLDOVERS: */
+.infoAboutMovieHoldovers{
+    position: fixed;
+    /* position: relative; */
+    text-align: center;
+    background-color: #000;
+    height: 75%;
+    width: 70%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    top: 17%;
+    left: 15%;
+    z-index: 20;
+    display: none;
+    box-shadow: #c00021 0px 0px 8px 5px;
+    animation: popup 0.5s ease-in-out; /* Dodanie animacji */
+}
+
+#titleHoldovers{
+        font-family: "Roboto", sans-serif;
+        color: #f8ac00;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 32px;
+        font-weight: 900;
+        margin-top: 5px;
+        /* margin-left: 10px; */
+        text-align: center;
+        /* justify-content: center; */
+        /* display: flex; */
+}
+
+.positionImageHoldovers{
+    width: 400px;
+    height: 200px;
+    /* justify-content: center; */
+    margin-top: -250px;
+    /* margin-left: -28px; */
+}
+
+.watchHoldovers{
+    z-index: 900;
+    /* color: white; */
+    font-size: 42px;
+    font-weight: 900;
+    position: absolute;
+    margin-top: 140px;
+    right: 22%;
+}
+
+/* ANATOMY OF A FALL: */
+.infoAboutMovieAOAF{
+    position: fixed;
+    /* position: relative; */
+    text-align: center;
+    background-color: #000;
+    height: 75%;
+    width: 70%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    top: 17%;
+    left: 15%;
+    z-index: 20;
+    display: none;
+    box-shadow: #c00021 0px 0px 8px 5px;
+    animation: popup 0.5s ease-in-out; /* Dodanie animacji */
+}
+
+#titleAOAF{
+        font-family: "Roboto", sans-serif;
+        color: #374478;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 32px;
+        font-weight: 900;
+        margin-top: 5px;
+        /* margin-left: 10px; */
+        text-align: center;
+        /* justify-content: center; */
+        /* display: flex; */
+}
+
+.positionImageAOAF{
+    width: 400px;
+    height: 200px;
+    /* justify-content: center; */
+    margin-top: 0px;
+    /* margin-left: -28px; */
+}
+
+.watchAOAF{
+    z-index: 900;
+    /* color: white; */
+    font-size: 42px;
+    font-weight: 900;
+    position: absolute;
+    margin-top: -100px;
+    right: 22%;
+}
+
+/* AMERICAN FICTION: */
+.infoAboutMovieAF{
+    position: fixed;
+    /* position: relative; */
+    text-align: center;
+    background-color: #000;
+    height: 75%;
+    width: 70%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    top: 17%;
+    left: 15%;
+    z-index: 20;
+    display: none;
+    box-shadow: #c00021 0px 0px 8px 5px;
+    animation: popup 0.5s ease-in-out; /* Dodanie animacji */
+}
+
+#titleAF{
+        font-family: "Roboto", sans-serif;
+        color: #f5b2a2;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 32px;
+        font-weight: 900;
+        margin-top: 5px;
+        /* margin-left: 10px; */
+        text-align: center;
+        /* justify-content: center; */
+        /* display: flex; */
+}
+
+.positionImageAF{
+    width: 400px;
+    height: 200px;
+    /* justify-content: center; */
+    margin-top: -90px;
+    /* margin-left: -28px; */
+}
+
+.watchAF{
+    z-index: 900;
+    /* color: white; */
+    font-size: 42px;
+    font-weight: 900;
+    position: absolute;
+    margin-top: -10px;
+    right: 22%;
+}
+
+
+/* THE BOY AND THE HERON: */
+.infoAboutMovieBoy{
+    position: fixed;
+    /* position: relative; */
+    text-align: center;
+    background-color: #000;
+    height: 75%;
+    width: 70%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    top: 17%;
+    left: 15%;
+    z-index: 20;
+    display: none;
+    box-shadow: #c00021 0px 0px 8px 5px;
+    animation: popup 0.5s ease-in-out; /* Dodanie animacji */
+}
+
+#titleBoy{
+        font-family: "Roboto", sans-serif;
+        color: #3a6f7d;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 32px;
+        font-weight: 900;
+        margin-top: 5px;
+        /* margin-left: 10px; */
+        text-align: center;
+        /* justify-content: center; */
+        /* display: flex; */
+}
+
+.positionImageBoy{
+    width: 400px;
+    height: 200px;
+    /* justify-content: center; */
+    margin-top: -220px;
+    margin-left: -15px;
+}
+
+.watchBoy{
+    z-index: 900;
+    /* color: white; */
+    font-size: 42px;
+    font-weight: 900;
+    position: absolute;
+    margin-top: 120px;
+    right: 22%;
+}
+
+/* 20 Days in Mariupol: */
+.infoAboutMovieDays{
+    position: fixed;
+    /* position: relative; */
+    text-align: center;
+    background-color: #000;
+    height: 75%;
+    width: 70%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    top: 17%;
+    left: 15%;
+    z-index: 20;
+    display: none;
+    box-shadow: #c00021 0px 0px 8px 5px;
+    animation: popup 0.5s ease-in-out; /* Dodanie animacji */
+}
+
+#titleDays{
+        font-family: "Roboto", sans-serif;
+        color: #8b8182;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 32px;
+        font-weight: 900;
+        margin-top: 5px;
+        /* margin-left: 10px; */
+        text-align: center;
+        /* justify-content: center; */
+        /* display: flex; */
+}
+
+.positionImageDays{
+    width: 400px;
+    height: 200px;
+    /* justify-content: center; */
+    margin-top: -360px;
+    margin-left: -15px;
+}
+
+.watchDays{
+    z-index: 900;
+    /* color: white; */
+    font-size: 42px;
+    font-weight: 900;
+    position: absolute;
+    margin-top: 250px;
+    right: 22%;
+}
+
+/* MINUS ONE: */
+.infoAboutMovieMinusOne{
+    position: fixed;
+    /* position: relative; */
+    text-align: center;
+    background-color: #000;
+    height: 75%;
+    width: 70%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    top: 17%;
+    left: 15%;
+    z-index: 20;
+    display: none;
+    box-shadow: #c00021 0px 0px 8px 5px;
+    animation: popup 0.5s ease-in-out; /* Dodanie animacji */
+}
+
+#titleMinusOne{
+        font-family: "Roboto", sans-serif;
+        color: #9db6b3;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 32px;
+        font-weight: 900;
+        margin-top: 5px;
+        /* margin-left: 10px; */
+        text-align: center;
+        /* justify-content: center; */
+        /* display: flex; */
+}
+
+.positionImageMinusOne{
+    width: 400px;
+    height: 200px;
+    /* justify-content: center; */
+    margin-top: -150px;
+    margin-left: -15px;
+}
+
+.watchMinusOne{
+    z-index: 900;
+    /* color: white; */
+    font-size: 42px;
+    font-weight: 900;
+    position: absolute;
+    margin-top: 50px;
+    right: 22%;
+}

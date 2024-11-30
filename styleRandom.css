@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #222222;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+nav{
+    height: 65px;
+    width: 100%;
+    display: flex;
+}
+
+#logo{
+    font-family: "Rubik Wet Paint", system-ui;
+    color: #c00021;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#choice{
+    background-color: #666;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+#choiceL{
+    /* display: flex; */
+    flex-direction: column;
+    margin-right: 40px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#choiceR{
+    /* display: flex; */
+    flex-direction: column;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.checkboxCategory{
+    border-radius: 25px;
+    margin: 5px;
+    border-color: aqua;
+    accent-color: #c00021;
+    background-color: aqua;
+    /* outline: 2px dashed #c00021; */
+}
+
+.checkboxCategory::before{
+    border-radius: 25px;
+    margin: 5px;
+    border-color: aqua;
+    /* outline: 2px dashed #c00021; */
+}
+
+.checkboxCategory:hover{
+    cursor: pointer;
+}
+
+.textCheckbox{
+    color: white;
+    font-size: 18px;
+}
+
+.checkPanel{
+    display: flex;
+    margin-top: 10px;
+}
+
+#submitt{
+    width: fit-content;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0 10px 0;
+}

@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="fontello/css/fontello.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+        <title>Serwis filmowy</title>
+    </head>
+<!--Formularz kontaktowy! (Główna i 4 podstrony)-->
+    <body>
+        <div id="container">
+            <nav>
+               <div id="logo">
+                <i class="icon-superpowers"></i>Mo<span style="color: #850016;">evil</span>and
+                </div>
+                <div id="navigationBlock">
+                    <div class="navTile">
+                        <a href="home.html">Home</a>
+                    </div>
+                    <div class="navTile">
+                        <a href="#">Movies</a>
+                    </div>
+                    <div class="navTile">
+                        <a href="#">Random</a>
+                    </div>
+                    <div class="navTile">
+                        <a href="login.html"><i class="icon-home"></i></a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="movieCategoryContainer">
+                <div class="movieCategory">Oscars:</div>
+                <select id="OscarsYear">
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                </select>
+            </div>
+
+                <button class="pre-btn" style="top: 350px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="M384-96 0-480l384-384 68 68-316 316 316 316-68 68Z"/></svg>
+                </button> <!--BUTTON '<'-->
+            <!--MovieTable (Main Container)-->
+            <div class="movieTable">
+            <!--OSCARS 2024-->
+                <div class="movieTableOscars2024">
+                    <div class="movieTile">
+                        <div class="movieImage" id="OppenheimerImage">
+                            <img alt="Oppenheimer" src="img/Oscars/2024/oppenheimer.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage" id="PoorThingsImage">
+                            <img alt="Poor Things" src="img/Oscars/2024/poor_things.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage" id="TZOFImage">
+                            <img alt="The Zone of Interest" src="img/Oscars/2024/zone_of_interest.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage" id="BarbieImage">
+                            <img alt="Barbie" src="img/Oscars/2024/barbie.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage" id="HoldoversImage">
+                            <img alt="Holdovers" src="img/Oscars/2024/holdovers.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage" id="AOAFImage">
+                            <img alt="Anatomie d’une chute" src="img/Oscars/2024/anatomie_d-une_chute.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage" id="AFImage">
+                            <img alt="American Fiction" src="img/Oscars/2024/american_fiction.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage" id="BoyImage">
+                            <img alt="Kimitachi wa dô ikiru ka" src="img/Oscars/2024/kimitachi_wa_do_ikiru_ka.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage" id="DaysImage">
+                            <img alt="20 Days in Mariupol" src="img/Oscars/2024/twenty_days_in_mariupol.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage" id="MinusOneImage">
+                            <img alt="Godzilla Minus One" src="img/Oscars/2024/godzilla_minus_one.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END OSCARS 2024-->
+                <button class="nxt-btn" style="top: 350px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="m288-96-68-68 316-316-316-316 68-68 384 384L288-96Z"/></svg>
+                </button> <!--BUTTON '>'-->
+
+        <!--OSCARS 2023 (DISPLAY: NONE;) {Poprawić proporcje zdjęć!}-->    
+                <div class="movieTableOscars2023">
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="Everything Everywhere All at Once" src="img/Oscars/2023/everything_everywhere_all_at_once.jpg" height="375" width="237">
+                    </div>
+                </div>
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="All Quiet on the Western Front" src="img/Oscars/2023/all_quiet_on_the_western_front.jpg" height="375" width="237">
+                    </div>
+                </div>
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="The Whale" src="img/Oscars/2023/whale.jpg" height="375" width="237">
+                    </div>
+                </div>
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="Top Gun: Maverick" src="img/Oscars/2023/top_gun_maverick.jpg" height="375" width="237">
+                    </div>
+                </div>
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="Black Panther: Wakanda Forever" src="img/Oscars/2023/black_panther_wakanda_forever.jpg" height="375" width="237">
+                    </div>
+                </div>
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="Avatar: The Way of Water" src="img/Oscars/2023/avatar_the_way_of_water.jpg" height="375" width="237">
+                    </div>
+                </div>
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="Women Talking" src="img/Oscars/2023/women_talking.jpg" height="375" width="237">
+                    </div>
+                </div>
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="Guillermo del Toro’s Pinocchio" src="img/Oscars/2023/guillermo_del_toros_pinocchio.jpg" height="375" width="237">
+                    </div>
+                </div>
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="RRR" src="img/Oscars/2023/rrr.jpg" height="375" width="237">
+                    </div>
+                </div>
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="Navalny" src="img/Oscars/2023/navalny.jpg" height="375" width="237">
+                    </div>
+                </div>
+                </div>
+        <!--END OSCARS 2023-->
+
+        <!--OSCARS 2022 (DISPLAY: NONE;) {Poprawić proporcje zdjęć!}-->    
+                <div class="movieTableOscars2022">
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Dune" src="img/Oscars/2022/dune.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="CODA" src="img/Oscars/2022/coda.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="The Eyes of Tammy Faye" src="img/Oscars/2022/eyes_of_tammy_faye.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="The Power of the Dog" src="img/Oscars/2022/power_of_the_dog.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="West Side Story" src="img/Oscars/2022/west_side_story.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Belfast" src="img/Oscars/2022/belfast.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="King Richard" src="img/Oscars/2022/king_richard.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Drive My Car" src="img/Oscars/2022/doraibu_mai_ka.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="No Time to Die" src="img/Oscars/2022/no_time_to_die.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Encanto" src="img/Oscars/2022/encanto.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                </div>
+        <!--END OSCARS 2022-->
+
+        <!--OSCARS 2021 (DISPLAY: NONE;) {Poprawić proporcje zdjęć!}-->    
+                <div class="movieTableOscars2021">
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Nomadland" src="img/Oscars/2021/nomadland.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Mank" src="img/Oscars/2021/mank.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Sound of Metal" src="img/Oscars/2021/sound_of_metal.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="The Father" src="img/Oscars/2021/father.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Judas and the Black Messiah" src="img/Oscars/2021/judas_and_the_black_messiah.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Ma Rainey's Black Bottom" src="img/Oscars/2021/ma_raineys_black_bottom.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Soul" src="img/Oscars/2021/soul.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Minari" src="img/Oscars/2021/minari.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Promising Young Woman" src="img/Oscars/2021/promising_young_woman.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Tenet" src="img/Oscars/2021/tenet.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                </div>
+        <!--END OSCARS 2021-->
+
+        <!--OSCARS 2020 (DISPLAY: NONE;) {Poprawić proporcje zdjęć!}-->    
+                <div class="movieTableOscars2020">
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Parasite" src="img/Oscars/2020/parasite.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="1917" src="img/Oscars/2020/nineteen_seventeen.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Joker" src="img/Oscars/2020/joker.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Once Upon a Time ... in Hollywood" src="img/Oscars/2020/once_upon_a_time_in_hollywood.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Ford v Ferrari" src="img/Oscars/2020/ford_v_ferrari.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Little Women" src="img/Oscars/2020/little_women.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Jojo Rabbit" src="img/Oscars/2020/jojo_rabbit.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Marriage Story" src="img/Oscars/2020/marriage_story.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Bombshell" src="img/Oscars/2020/bombshell.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                    <div class="movieTile">
+                        <div class="movieImage">
+                            <img alt="Toy Story 4" src="img/Oscars/2020/toy_story_four.jpg" height="375" width="237">
+                        </div>
+                    </div>
+                </div>
+        <!--END OSCARS 2020-->
+
+<!--MOVIE INFO (MODAL)-->
+    <!--OPPENHEIMER-->
+        <div class="infoAboutMovieOppenheimer">
+                <div class="movieInfo">
+                    <div class="close">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    </div>
+                    <!-- <div class="headinfo"> -->
+                        <div id="titleOppenheimer">
+                            Oppenheimer
+                        </div>
+
+                    <!-- </div> -->
+                    <div class="year">
+                        - 2023 -
+                    </div> 
+                    
+        <!--TABELA-->
+        <div class="infoTrailer">
+            <div class="styleTable">
+                <table>
+                    <tr>
+                        <th>Category: </th>
+                        <th>Psychological Drama / Biography / History</th>
+                    </tr>
+                    <tr>
+                        <th>Duration: </th>
+                        <th>3h</th>
+                    </tr>
+                    <tr>
+                        <th>Director: </th>
+                        <th>Christopher Nolan</th>
+                    </tr>
+                    <tr>
+                        <th>Cast: </th>
+                        <th>Cilian Murphy,<br>Emily Blunt,<br>Matt Damon</th>
+                    </tr>
+                    <tr>
+                        <th>Oscars: </th>
+                        <th>
+                            <!--1-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f1642f"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--2-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f1642f"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--3-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f1642f"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--4-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f1642f"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--5-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f1642f"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--6-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f1642f"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--7-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f1642f"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <span style="opacity: 0.5;">
+                            <!--8-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f1642f"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--9-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f1642f"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--10-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f1642f"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--11-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f1642f"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--12-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f1642f"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--13-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f1642f"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            </span>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="styleTrailer">
+                <div class="trailer">
+                    <div class="positionImageOppenheimer">
+                        <a href="https://www.youtube.com/watch?v=uYPbbksJxIg" target="_blank">
+                            <img alt="Oppenheimer" src="img/Oscars/2024/oppenheimer.jpg" height="650">
+                        </a>
+                    </div>
+                </div>
+                <div class="watchOppenheimer">
+                    <a href="https://www.youtube.com/watch?v=uYPbbksJxIg" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="56px" viewBox="0 -960 960 960" width="56px" fill="#e8eaed"><path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    <div class="description">
+                        Oppenheimer to epicki dramat biograficzny w reżyserii Christophera Nolana, oparty na książce "American Prometheus" autorstwa Kai Birda i Martina J. Sherwina. Film opowiada historię J. Roberta Oppenheimera, amerykańskiego fizyka teoretycznego, który odegrał kluczową rolę w stworzeniu bomby atomowej podczas Projektu Manhattan. <br><br>
+
+                        Przedstawia zmagania naukowca z moralnymi i etycznymi konsekwencjami swojej pracy, w obliczu globalnego konfliktu i zimnowojennego napięcia. W roli głównej występuje Cillian Murphy, a obsadę uzupełniają m.in. Emily Blunt, Matt Damon i Robert Downey Jr. Produkcja łączy w sobie napięcie historycznego thrillera z głębokim psychologicznym studium człowieka uwikłanego w wydarzenia, które zmieniły bieg historii.
+                    </div>
+                </div>
+        </div>
+
+    <!--POOR THINGS-->
+        <div class="infoAboutMoviePoorThings">
+                <div class="movieInfo">
+                    <div class="close">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    </div>
+                    <!-- <div class="headinfo"> -->
+                        <div id="titlePoorThings">
+                            Poor Things
+                        </div>
+
+                    <!-- </div> -->
+                    <div class="year">
+                        - 2023 -
+                    </div> 
+                    
+        <!--TABELA-->
+        <div class="infoTrailer">
+            <div class="styleTable">
+                <table>
+                <tr>
+                    <th>Category: </th>
+                    <th>Dark Comedy / Sci-Fi / Romance</th>
+                </tr>
+                <tr>
+                    <th>Duration: </th>
+                    <th>2h 21m</th>
+                </tr>
+                <tr>
+                    <th>Director: </th>
+                    <th>Yorgos Lanthimos</th>
+                </tr>
+                <tr>
+                    <th>Stars: </th>
+                    <th>Emma Stone,<br>Mark Ruffalo,<br>Willem Dafoe</th>
+                </tr>
+                <tr>
+                        <th>Oscars: </th>
+                        <th>
+                            <!--1-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#8eb7cd"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--2-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#8eb7cd"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--3-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#8eb7cd"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--4-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#8eb7cd"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <span style="opacity: 0.5;">
+                            <!--5-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#8eb7cd"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--6-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#8eb7cd"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--7-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#8eb7cd"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--8-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#8eb7cd"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--9-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#8eb7cd"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--10-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#8eb7cd"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--11-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#8eb7cd"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            </span>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="styleTrailer">
+                <div class="trailer">
+                    <div class="positionImagePoorThings">
+                        <a href="https://www.youtube.com/watch?v=RlbR5N6veqw" target="_blank">
+                            <img alt="Poor Things" src="img/Oscars/2024/poor_things.jpg" height="700">
+                        </a>
+                    </div>
+                </div>
+                <div class="watchPoorThings">
+                    <a href="https://www.youtube.com/watch?v=RlbR5N6veqw" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="56px" viewBox="0 -960 960 960" width="56px" fill="#e8eaed"><path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    <div class="description">
+                        Poor Things to niezwykły film w reżyserii Yorgosa Lanthimosa, oparty na powieści Alasdaira Graya o tym samym tytule. Opowiada surrealistyczną i pełną czarnego humoru historię Belli Baxter, młodej kobiety przywróconej do życia przez ekscentrycznego naukowca, doktora Godwina Baxtera, w wyniku eksperymentalnego zabiegu. <br><br>
+
+                        Bella, grana przez Emmę Stone, podejmuje podróż przez świat pełen ekstrawaganckich postaci i niezwykłych przygód, odkrywając swoją tożsamość i wolność, jednocześnie kwestionując społeczne normy i ograniczenia. Film jest barwną, wizualnie olśniewającą eksploracją tematów emancypacji, moralności i ludzkiej natury, wzbogaconą o charakterystyczny dla Lanthimosa styl, łączący absurdalność z głębokim przesłaniem.
+                    </div>
+                </div>
+        </div>
+
+    <!--THE ZONE OF INTEREST-->
+        <div class="infoAboutMovieTZOF">
+                <div class="movieInfo">
+                    <div class="close">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                    </div>
+                    <!-- <div class="headinfo"> -->
+                        <div id="titleTZOF">
+                            THE ZONE OF INTEREST
+                        </div>
+
+                    <!-- </div> -->
+                    <div class="year">
+                        - 2023 -
+                    </div> 
+                    
+        <!--TABELA-->
+        <div class="infoTrailer">
+            <div class="styleTable">
+                <table>
+                <tr>
+                    <th>Category: </th>
+                    <th>Drama / History / War</th>
+                </tr>
+                <tr>
+                    <th>Duration: </th>
+                    <th>1h 45m</th>
+                </tr>
+                <tr>
+                    <th>Director: </th>
+                    <th>Jonathan Glazer</th>
+                </tr>
+                <tr>
+                    <th>Stars: </th>
+                    <th>Christian Friedel,<br>Sandra Hüller,<br>Johann Karthaus</th>
+                </tr>
+                <tr>
+                        <th>Oscars: </th>
+                        <th>
+                            <!--1-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#ff1f37"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--2-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#ff1f37"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <span style="opacity: 0.5;">
+                            <!--3-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#ff1f37"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--4-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#ff1f37"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            <!--5-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#ff1f37"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                            </span>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="styleTrailer">
+                <div class="trailer">
+                    <div class="positionImageTZOF">
+                        <a href="https://www.youtube.com/watch?v=r-vfg3KkV54" target="_blank">
+                            <img alt="The zone of Interest" src="img/Oscars/2024/zone_of_interest.jpg" height="610">
+                        </a>
+                    </div>
+                </div>
+                <div class="watchTZOF">
+                    <a href="https://www.youtube.com/watch?v=r-vfg3KkV54" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="56px" viewBox="0 -960 960 960" width="56px" fill="#e8eaed"><path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    <div class="description">
+                        The Zone of Interest to przejmujący dramat w reżyserii Jonathana Glazera, inspirowany powieścią Martina Amisa. Film ukazuje życie rodziny Hössów, zamieszkującej dom w sąsiedztwie obozu koncentracyjnego Auschwitz w czasie II wojny światowej. <br><br>
+
+                        Poprzez codzienną rutynę i pozorną normalność bohaterów, Glazer tworzy kontrast z niewyobrażalnym okrucieństwem dziejącym się tuż obok. Produkcja, wyróżniająca się minimalistycznym stylem i psychologiczną głębią, bada tematy moralnej znieczulicy, dehumanizacji i banalności zła. Film, unikalny w podejściu do trudnej tematyki, zmusza widza do refleksji nad ludzką zdolnością do ignorowania cierpienia i utraty empatii.
+                    </div>
+                </div>
+        </div>
+
+    <!--BARBIE-->
+        <div class="infoAboutMovieBarbie">
+    <div class="movieInfo">
+        <div class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </div>
+        <!-- <div class="headinfo"> -->
+            <div id="titleBarbie">
+                Barbie
+            </div>
+
+        <!-- </div> -->
+        <div class="year">
+            - 2023 -
+        </div> 
+        
+<!--TABELA-->
+<div class="infoTrailer">
+<div class="styleTable">
+    <table>
+    <tr>
+        <th>Category: </th>
+        <th>Adventure / Comedy / Fantasy</th>
+    </tr>
+    <tr>
+        <th>Duration: </th>
+        <th>1h 54m</th>
+    </tr>
+    <tr>
+        <th>Director: </th>
+        <th>Greta Gerwig</th>
+    </tr>
+    <tr>
+        <th>Stars: </th>
+        <th>Margot Robbie,<br>Ryan Gosling,<br>Issa Rae</th>
+    </tr>
+    <tr>
+            <th>Oscars: </th>
+            <th>
+                <!--1-->
+                <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f200a2"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                <span style="opacity: 0.5;">
+                <!--2-->
+                <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f200a2"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                <!--3-->
+                <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f200a2"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                <!--4-->
+                <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f200a2"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                <!--5-->
+                <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f200a2"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                <!--6-->
+                <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f200a2"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                <!--7-->
+                <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f200a2"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                <!--8-->
+                <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f200a2"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                </span>
+            </th>
+        </tr>
+    </table>
+</div>
+
+
+<div class="styleTrailer">
+    <div class="trailer">
+        <div class="positionImageBarbie">
+            <a href="https://www.youtube.com/watch?v=pBk4NYhWNMM" target="_blank">
+                <img alt="The zone of Interest" src="img/Oscars/2024/barbie.jpg" height="610">
+            </a>
+        </div>
+    </div>
+    <div class="watchBarbie">
+        <a href="https://www.youtube.com/watch?v=pBk4NYhWNMM" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" height="56px" viewBox="0 -960 960 960" width="56px" fill="#e8eaed"><path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+        </a>
+    </div>
+</div>
+</div>
+        <div class="description">
+            Barbie to pełna humoru i kolorów komedia w reżyserii Grety Gerwig, która w nowoczesny sposób interpretuje kultową postać lalki Barbie. Film opowiada historię Barbie (Margot Robbie), która, zmuszona do opuszczenia idealnego świata Barbie Land, wyrusza w podróż do rzeczywistego świata, aby odkryć prawdziwe znaczenie życia i swojej tożsamości. <br><br>
+
+            Towarzyszy jej Ken (Ryan Gosling), co prowadzi do wielu zabawnych i wzruszających sytuacji. Produkcja, bogata w metakomentarz i błyskotliwe dialogi, porusza takie tematy jak stereotypy, samorealizacja i znaczenie indywidualności. Film łączy rozrywkę z głębszym przesłaniem, zachwycając zarówno wizualną estetyką, jak i emocjonalnym przekazem.
+        </div>
+    </div>
+        </div>
+
+    <!--Holdovers-->
+        <div class="infoAboutMovieHoldovers">
+        <div class="movieInfo">
+            <div class="close">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </div>
+            <!-- <div class="headinfo"> -->
+                <div id="titleHoldovers">
+                    The Holdovers
+                </div>
+    
+            <!-- </div> -->
+            <div class="year">
+                - 2023 -
+            </div> 
+            
+    <!--TABELA-->
+    <div class="infoTrailer">
+    <div class="styleTable">
+        <table>
+        <tr>
+            <th>Category: </th>
+            <th>Comedy / Drama / Holiday</th>
+        </tr>
+        <tr>
+            <th>Duration: </th>
+            <th>2h 13m</th>
+        </tr>
+        <tr>
+            <th>Director: </th>
+            <th>Alexander Payne</th>
+        </tr>
+        <tr>
+            <th>Stars: </th>
+            <th>Paul Giamatti,<br>Da'Vine Joy Randolph,<br>Dominic Sessa</th>
+        </tr>
+        <tr>
+                <th>Oscars: </th>
+                <th>
+                    <!--1-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f8ac00"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                    <span style="opacity: 0.5;">
+                    <!--2-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f8ac00"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                    <!--3-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f8ac00"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                    <!--4-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f8ac00"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                    <!--5-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f8ac00"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+                    </span>
+                </th>
+            </tr>
+        </table>
+    </div>
+    
+    
+    <div class="styleTrailer">
+        <div class="trailer">
+            <div class="positionImageHoldovers">
+                <a href="https://www.youtube.com/watch?v=AhKLpJmHhIg" target="_blank">
+                    <img alt="The zone of Interest" src="img/Oscars/2024/holdovers.jpg" height="610">
+                </a>
+            </div>
+        </div>
+        <div class="watchHoldovers">
+            <a href="https://www.youtube.com/watch?v=AhKLpJmHhIg" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" height="56px" viewBox="0 -960 960 960" width="56px" fill="#e8eaed"><path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+            </a>
+        </div>
+    </div>
+    </div>
+            <div class="description">
+                The Holdovers to ciepły i wzruszający dramat w reżyserii Alexandra Payne’a, osadzony w latach 70. XX wieku. Film opowiada historię nieco zgorzkniałego nauczyciela Paula Hunhama (Paul Giamatti), który zostaje zmuszony do spędzenia przerwy świątecznej na opiece nad grupą uczniów pozostających w internacie. <br><br>
+
+                Jego głównym towarzyszem staje się młody, zbuntowany chłopak, który nie ma gdzie spędzić świąt, oraz pracownica stołówki, zmagająca się z osobistą stratą. Wspólnie odkrywają niespodziewane pokrewieństwo dusz, ucząc się empatii i otwierając na nowe spojrzenie na życie. Film, pełen subtelnego humoru i emocjonalnej głębi, jest poruszającą opowieścią o przyjaźni, odkupieniu i potrzebie ludzkiego zrozumienia.
+            </div>
+        </div>
+        </div>
+    
+    <!--ANATOMY OF A FALL-->
+        <div class="infoAboutMovieAOAF">
+        <div class="movieInfo">
+            <div class="close">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </div>
+            <!-- <div class="headinfo"> -->
+                <div id="titleAOAF">
+                    ANATOMY OF A FALL
+                </div>
+    
+            <!-- </div> -->
+            <div class="year">
+                - 2023 -
+            </div> 
+            
+    <!--TABELA-->
+    <div class="infoTrailer">
+    <div class="styleTable">
+        <table>
+        <tr>
+            <th>Category: </th>
+            <th>Crime / Psychological Drama / Thriller</th>
+        </tr>
+        <tr>
+            <th>Duration: </th>
+            <th>2h 31m</th>
+        </tr>
+        <tr>
+            <th>Director: </th>
+            <th>Justine Triet</th>
+        </tr>
+        <tr>
+            <th>Stars: </th>
+            <th>Sandra Hüller,<br>Swann Arlaud,<br>Milo Machado-Graner</th>
+        </tr>
+        <tr>
+                <th>Oscars: </th>
+                <th>
+                    <!--1-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#374478"><path d="M288-144v-72h156v-124q-42-8-77.5-33.5T313-434q-73-9-121-62.51T144-622v-26q0-29.7 21.15-50.85Q186.3-720 216-720h72v-96h384v96h72.21Q774-720 795-698.85T816-648v24q0 72-48 126.5T647-434q-18 35-53.5 60.5T516-340v124h156v72H288Zm0-372v-132h-72v24q0 37 19 65.5t53 42.5Zm192 108q50 0 85-35t35-85v-216H360v216q0 50 35 85t85 35Zm192-108q34-14 53-42.5t19-65.5v-24h-72v132Zm-192-59Z"/></svg>
+                    <span style="opacity: 0.5;">
+                    <!--2-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#374478"><path d="M288-144v-72h156v-124q-42-8-77.5-33.5T313-434q-73-9-121-62.51T144-622v-26q0-29.7 21.15-50.85Q186.3-720 216-720h72v-96h384v96h72.21Q774-720 795-698.85T816-648v24q0 72-48 126.5T647-434q-18 35-53.5 60.5T516-340v124h156v72H288Zm0-372v-132h-72v24q0 37 19 65.5t53 42.5Zm192 108q50 0 85-35t35-85v-216H360v216q0 50 35 85t85 35Zm192-108q34-14 53-42.5t19-65.5v-24h-72v132Zm-192-59Z"/></svg>
+                    <!--3-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#374478"><path d="M288-144v-72h156v-124q-42-8-77.5-33.5T313-434q-73-9-121-62.51T144-622v-26q0-29.7 21.15-50.85Q186.3-720 216-720h72v-96h384v96h72.21Q774-720 795-698.85T816-648v24q0 72-48 126.5T647-434q-18 35-53.5 60.5T516-340v124h156v72H288Zm0-372v-132h-72v24q0 37 19 65.5t53 42.5Zm192 108q50 0 85-35t35-85v-216H360v216q0 50 35 85t85 35Zm192-108q34-14 53-42.5t19-65.5v-24h-72v132Zm-192-59Z"/></svg>
+                    <!--4-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#374478"><path d="M288-144v-72h156v-124q-42-8-77.5-33.5T313-434q-73-9-121-62.51T144-622v-26q0-29.7 21.15-50.85Q186.3-720 216-720h72v-96h384v96h72.21Q774-720 795-698.85T816-648v24q0 72-48 126.5T647-434q-18 35-53.5 60.5T516-340v124h156v72H288Zm0-372v-132h-72v24q0 37 19 65.5t53 42.5Zm192 108q50 0 85-35t35-85v-216H360v216q0 50 35 85t85 35Zm192-108q34-14 53-42.5t19-65.5v-24h-72v132Zm-192-59Z"/></svg>
+                    <!--5-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#374478"><path d="M288-144v-72h156v-124q-42-8-77.5-33.5T313-434q-73-9-121-62.51T144-622v-26q0-29.7 21.15-50.85Q186.3-720 216-720h72v-96h384v96h72.21Q774-720 795-698.85T816-648v24q0 72-48 126.5T647-434q-18 35-53.5 60.5T516-340v124h156v72H288Zm0-372v-132h-72v24q0 37 19 65.5t53 42.5Zm192 108q50 0 85-35t35-85v-216H360v216q0 50 35 85t85 35Zm192-108q34-14 53-42.5t19-65.5v-24h-72v132Zm-192-59Z"/></svg>
+                    </span>
+                </th>
+            </tr>
+        </table>
+    </div>
+    
+    
+    <div class="styleTrailer">
+        <div class="trailer">
+            <div class="positionImageAOAF">
+                <a href="https://www.youtube.com/watch?v=FUXawkH-ONM" target="_blank">
+                    <img alt="The zone of Interest" src="img/Oscars/2024/anatomie_d-une_chute.jpg" height="610">
+                </a>
+            </div>
+        </div>
+        <div class="watchAOAF">
+            <a href="https://www.youtube.com/watch?v=FUXawkH-ONM" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" height="56px" viewBox="0 -960 960 960" width="56px" fill="#e8eaed"><path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+            </a>
+        </div>
+    </div>
+    </div>
+            <div class="description">
+                Anatomy of a Fall to intensywny dramat kryminalny w reżyserii Justine Triet, który zgłębia skomplikowaną dynamikę relacji rodzinnych i moralnych dylematów. Film opowiada historię Sandry, pisarki oskarżonej o zamordowanie swojego męża po tym, jak jego ciało zostaje znalezione pod ich alpejskim domem. <br><br>
+
+                W centrum wydarzeń znajduje się także ich niewidomy syn, który staje się kluczowym świadkiem w sprawie i musi zmierzyć się z prawdą o rodzicach. Film łączy w sobie elementy psychologicznego thrillera i dramatu sądowego, skupiając się na zawiłościach ludzkich emocji, prawdy i manipulacji. To poruszająca opowieść o zaufaniu, winie i wpływie traumatycznych wydarzeń na rodzinne więzi.
+            </div>
+        </div>
+        </div>
+
+    <!--AMERICAN FICTION-->
+        <div class="infoAboutMovieAF">
+            <div class="movieInfo">
+                <div class="close">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </div>
+                <!-- <div class="headinfo"> -->
+                    <div id="titleAF">
+                        AMERICAN FICTION
+                    </div>
+        
+                <!-- </div> -->
+                <div class="year">
+                    - 2023 -
+                </div> 
+                
+        <!--TABELA-->
+        <div class="infoTrailer">
+        <div class="styleTable">
+            <table>
+            <tr>
+                <th>Category: </th>
+                <th>Satire / Drama / Dark Comedy</th>
+            </tr>
+            <tr>
+                <th>Duration: </th>
+                <th>1h 57m</th>
+            </tr>
+            <tr>
+                <th>Director: </th>
+                <th>Cord Jefferson</th>
+            </tr>
+            <tr>
+                <th>Stars: </th>
+                <th>Jeffrey Wright,<br>Tracee Ellis Ross,<br>John Ortiz</th>
+            </tr>
+            <tr>
+                    <th>Oscars: </th>
+                    <th>
+                        <!--1-->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f5b2a2"><path d="M288-144v-72h156v-124q-42-8-77.5-33.5T313-434q-73-9-121-62.51T144-622v-26q0-29.7 21.15-50.85Q186.3-720 216-720h72v-96h384v96h72.21Q774-720 795-698.85T816-648v24q0 72-48 126.5T647-434q-18 35-53.5 60.5T516-340v124h156v72H288Zm0-372v-132h-72v24q0 37 19 65.5t53 42.5Zm192 108q50 0 85-35t35-85v-216H360v216q0 50 35 85t85 35Zm192-108q34-14 53-42.5t19-65.5v-24h-72v132Zm-192-59Z"/></svg>
+                        <span style="opacity: 0.5;">
+                        <!--2-->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f5b2a2"><path d="M288-144v-72h156v-124q-42-8-77.5-33.5T313-434q-73-9-121-62.51T144-622v-26q0-29.7 21.15-50.85Q186.3-720 216-720h72v-96h384v96h72.21Q774-720 795-698.85T816-648v24q0 72-48 126.5T647-434q-18 35-53.5 60.5T516-340v124h156v72H288Zm0-372v-132h-72v24q0 37 19 65.5t53 42.5Zm192 108q50 0 85-35t35-85v-216H360v216q0 50 35 85t85 35Zm192-108q34-14 53-42.5t19-65.5v-24h-72v132Zm-192-59Z"/></svg>
+                        <!--3-->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f5b2a2"><path d="M288-144v-72h156v-124q-42-8-77.5-33.5T313-434q-73-9-121-62.51T144-622v-26q0-29.7 21.15-50.85Q186.3-720 216-720h72v-96h384v96h72.21Q774-720 795-698.85T816-648v24q0 72-48 126.5T647-434q-18 35-53.5 60.5T516-340v124h156v72H288Zm0-372v-132h-72v24q0 37 19 65.5t53 42.5Zm192 108q50 0 85-35t35-85v-216H360v216q0 50 35 85t85 35Zm192-108q34-14 53-42.5t19-65.5v-24h-72v132Zm-192-59Z"/></svg>
+                        <!--4-->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f5b2a2"><path d="M288-144v-72h156v-124q-42-8-77.5-33.5T313-434q-73-9-121-62.51T144-622v-26q0-29.7 21.15-50.85Q186.3-720 216-720h72v-96h384v96h72.21Q774-720 795-698.85T816-648v24q0 72-48 126.5T647-434q-18 35-53.5 60.5T516-340v124h156v72H288Zm0-372v-132h-72v24q0 37 19 65.5t53 42.5Zm192 108q50 0 85-35t35-85v-216H360v216q0 50 35 85t85 35Zm192-108q34-14 53-42.5t19-65.5v-24h-72v132Zm-192-59Z"/></svg>
+                        <!--5-->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#f5b2a2"><path d="M288-144v-72h156v-124q-42-8-77.5-33.5T313-434q-73-9-121-62.51T144-622v-26q0-29.7 21.15-50.85Q186.3-720 216-720h72v-96h384v96h72.21Q774-720 795-698.85T816-648v24q0 72-48 126.5T647-434q-18 35-53.5 60.5T516-340v124h156v72H288Zm0-372v-132h-72v24q0 37 19 65.5t53 42.5Zm192 108q50 0 85-35t35-85v-216H360v216q0 50 35 85t85 35Zm192-108q34-14 53-42.5t19-65.5v-24h-72v132Zm-192-59Z"/></svg>
+                        </span>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        
+        
+        <div class="styleTrailer">
+            <div class="trailer">
+                <div class="positionImageAF">
+                    <a href="https://www.youtube.com/watch?v=i0MbLCpYJPA" target="_blank">
+                        <img alt="The zone of Interest" src="img/Oscars/2024/american_fiction.jpg" height="610">
+                    </a>
+                </div>
+            </div>
+            <div class="watchAF">
+                <a href="https://www.youtube.com/watch?v=i0MbLCpYJPA" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="56px" viewBox="0 -960 960 960" width="56px" fill="#e8eaed"><path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                </a>
+            </div>
+        </div>
+        </div>
+                <div class="description">
+                    American Fiction to błyskotliwa satyra w reżyserii Corda Jeffersona, oparta na powieści The Sellout autorstwa Percivala Everetta. Film opowiada historię Thelona "Monka" Ellisa, sfrustrowanego pisarza, który znużony stereotypowym przedstawianiem Afroamerykanów w literaturze postanawia napisać książkę jako żart, parodiującą te klisze. <br><br>
+
+                    Ku jego zaskoczeniu dzieło staje się ogromnym sukcesem, zmuszając go do konfrontacji z własnymi przekonaniami, hipokryzją przemysłu artystycznego i oczekiwaniami społecznymi. Film wnikliwie analizuje tematy tożsamości, autentyczności i uprzedzeń, oferując jednocześnie zabawną i prowokującą refleksję nad współczesną kulturą. Dzięki ostremu humorowi i głębokim przesłaniom to opowieść zarówno rozrywkowa, jak i zmuszająca do myślenia.
+                </div>
+            </div>
+        </div>
+
+    <!--THE BOY AND THE HERON-->
+        <div class="infoAboutMovieBoy">
+            <div class="movieInfo">
+                <div class="close">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </div>
+                <!-- <div class="headinfo"> -->
+                    <div id="titleBoy">
+                        THE BOY AND THE HERON
+                    </div>
+        
+                <!-- </div> -->
+                <div class="year">
+                    - 2023 -
+                </div> 
+                
+        <!--TABELA-->
+        <div class="infoTrailer">
+        <div class="styleTable">
+            <table>
+            <tr>
+                <th>Category: </th>
+                <th>Hand-Drawn Animation / Drama / Fantasy</th>
+            </tr>
+            <tr>
+                <th>Duration: </th>
+                <th>2h 4m</th>
+            </tr>
+            <tr>
+                <th>Director: </th>
+                <th>Hayao Miyazaki</th>
+            </tr>
+            <tr>
+                <th>Stars: </th>
+                <th>Soma Santoki,<br>Masaki Suda,<br>Kô Shibasaki</th>
+            </tr>
+            <tr>
+                    <th>Oscars: </th>
+                    <th>
+                        <!--1-->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#3a6f7d"><path d="M288-144v-72h156v-124q-42-8-77.5-33.5T313-434q-73-9-121-62.51T144-622v-26q0-29.7 21.15-50.85Q186.3-720 216-720h72v-96h384v96h72.21Q774-720 795-698.85T816-648v24q0 72-48 126.5T647-434q-18 35-53.5 60.5T516-340v124h156v72H288Zm0-372v-132h-72v24q0 37 19 65.5t53 42.5Zm192 108q50 0 85-35t35-85v-216H360v216q0 50 35 85t85 35Zm192-108q34-14 53-42.5t19-65.5v-24h-72v132Zm-192-59Z"/></svg>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        
+        
+        <div class="styleTrailer">
+            <div class="trailer">
+                <div class="positionImageBoy">
+                    <a href="https://www.youtube.com/watch?v=t5khm-VjEu4" target="_blank">
+                        <img alt="The zone of Interest" src="img/Oscars/2024/kimitachi_wa_do_ikiru_ka.jpg" height="650">
+                    </a>
+                </div>
+            </div>
+            <div class="watchBoy">
+                <a href="https://www.youtube.com/watch?v=t5khm-VjEu4" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="56px" viewBox="0 -960 960 960" width="56px" fill="#e8eaed"><path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                </a>
+            </div>
+        </div>
+        </div>
+                <div class="description">
+                    The Boy and the Heron to magiczna animacja w reżyserii Hayao Miyazakiego, która łączy baśniowy świat z głębokimi emocjami i filozoficznymi pytaniami. Film opowiada historię Mahito, młodego chłopca, który po stracie matki przeprowadza się na wieś i odkrywa tajemniczy, pełen symboliki świat, do którego prowadzi niezwykła czapla. <br><br>
+
+                    W tej pełnej przygód podróży Mahito staje przed wyzwaniami, które zmuszają go do zmierzenia się z żalem, poszukiwania odpowiedzi na pytania o życie i śmierć oraz odnalezienia własnej drogi. Film zachwyca wizualnym pięknem i głębią przekazu, eksplorując tematy straty, odwagi i ludzkiego połączenia z naturą. To poetycka i poruszająca opowieść, typowa dla geniuszu studia Ghibli.
+                </div>
+            </div>
+        </div>
+
+    <!--20 Days in Mariupol-->
+        <div class="infoAboutMovieDays">
+        <div class="movieInfo">
+            <div class="close">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </div>
+            <!-- <div class="headinfo"> -->
+                <div id="titleDays">
+                    20 Days in Mariupol
+                </div>
+    
+            <!-- </div> -->
+            <div class="year">
+                - 2023 -
+            </div> 
+            
+    <!--TABELA-->
+    <div class="infoTrailer">
+    <div class="styleTable">
+        <table>
+        <tr>
+            <th>Category: </th>
+            <th>Documentary / War</th>
+        </tr>
+        <tr>
+            <th>Duration: </th>
+            <th>1h 35m</th>
+        </tr>
+        <tr>
+            <th>Director: </th>
+            <th>Mstyslav Chernov</th>
+        </tr>
+        <tr>
+            <th>Stars: </th>
+            <th>Mstyslav Chernov,<br>Evgeniy Maloletka,<br>Liudmyla Amelkina</th>
+        </tr>
+        <tr>
+                <th>Oscars: </th>
+                <th>
+                    <!--1-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#8b8182"><path d="M288-144v-72h156v-124q-42-8-77.5-33.5T313-434q-73-9-121-62.51T144-622v-26q0-29.7 21.15-50.85Q186.3-720 216-720h72v-96h384v96h72.21Q774-720 795-698.85T816-648v24q0 72-48 126.5T647-434q-18 35-53.5 60.5T516-340v124h156v72H288Zm0-372v-132h-72v24q0 37 19 65.5t53 42.5Zm192 108q50 0 85-35t35-85v-216H360v216q0 50 35 85t85 35Zm192-108q34-14 53-42.5t19-65.5v-24h-72v132Zm-192-59Z"/></svg>
+                </th>
+            </tr>
+        </table>
+    </div>
+    
+    
+    <div class="styleTrailer">
+        <div class="trailer">
+            <div class="positionImageDays">
+                <a href="https://www.youtube.com/watch?v=9H_Fg_5x4ME" target="_blank">
+                    <img alt="The zone of Interest" src="img/Oscars/2024/twenty_days_in_mariupol.jpg" height="650">
+                </a>
+            </div>
+        </div>
+        <div class="watchDays">
+            <a href="https://www.youtube.com/watch?v=9H_Fg_5x4ME" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" height="56px" viewBox="0 -960 960 960" width="56px" fill="#e8eaed"><path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+            </a>
+        </div>
+    </div>
+    </div>
+            <div class="description">
+                20 Days in Mariupol to przejmujący dokument w reżyserii i narracji Mstysława Czernowa, który przedstawia pierwsze dni rosyjskiej inwazji na Ukrainę w 2022 roku. Film jest zapisem dramatycznych wydarzeń w oblężonym Mariupolu, widzianych oczami dziennikarzy i mieszkańców miasta, zmagających się z brutalnością wojny i humanitarną katastrofą. <br><br>
+
+                Łącząc materiały zarejestrowane przez reporterów AP z osobistymi relacjami, dokument ukazuje przerażającą rzeczywistość życia pod ostrzałem, bohaterstwo zwykłych ludzi i walkę o przetrwanie. To poruszająca i bezkompromisowa opowieść o ludzkiej sile, poświęceniu i potrzebie zachowania prawdy w obliczu dezinformacji i cierpienia. Film stanowi ważne świadectwo jednego z najciemniejszych rozdziałów współczesnej historii.
+            </div>
+        </div>
+        </div>
+
+    <!--MINUS ONE-->
+    <div class="infoAboutMovieMinusOne">
+        <div class="movieInfo">
+            <div class="close">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </div>
+            <!-- <div class="headinfo"> -->
+                <div id="titleMinusOne">
+                    Godzilla Minus One
+                </div>
+    
+            <!-- </div> -->
+            <div class="year">
+                - 2023 -
+            </div> 
+            
+    <!--TABELA-->
+    <div class="infoTrailer">
+    <div class="styleTable">
+        <table>
+        <tr>
+            <th>Category: </th>
+            <th>Kaiju / Sci-Fi / Action</th>
+        </tr>
+        <tr>
+            <th>Duration: </th>
+            <th>2h 4m</th>
+        </tr>
+        <tr>
+            <th>Director: </th>
+            <th>Takashi Yamazaki</th>
+        </tr>
+        <tr>
+            <th>Stars: </th>
+            <th>Minami Hamabe,<br>Ryunosuke Kamiki,<br>Sakura Andô</th>
+        </tr>
+        <tr>
+                <th>Oscars: </th>
+                <th>
+                    <!--1-->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#9db6b3"><path d="M288-144v-72h156v-124q-42-8-77.5-33.5T313-434q-73-9-121-62.51T144-622v-26q0-29.7 21.15-50.85Q186.3-720 216-720h72v-96h384v96h72.21Q774-720 795-698.85T816-648v24q0 72-48 126.5T647-434q-18 35-53.5 60.5T516-340v124h156v72H288Zm0-372v-132h-72v24q0 37 19 65.5t53 42.5Zm192 108q50 0 85-35t35-85v-216H360v216q0 50 35 85t85 35Zm192-108q34-14 53-42.5t19-65.5v-24h-72v132Zm-192-59Z"/></svg>
+                </th>
+            </tr>
+        </table>
+    </div>
+    
+    
+    <div class="styleTrailer">
+        <div class="trailer">
+            <div class="positionImageMinusOne">
+                <a href="https://www.youtube.com/watch?v=r7DqccP1Q_4" target="_blank">
+                    <img alt="The zone of Interest" src="img/Oscars/2024/godzilla_minus_one.jpg" height="650">
+                </a>
+            </div>
+        </div>
+        <div class="watchMinusOne">
+            <a href="https://www.youtube.com/watch?v=r7DqccP1Q_4" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" height="56px" viewBox="0 -960 960 960" width="56px" fill="#e8eaed"><path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+            </a>
+        </div>
+    </div>
+    </div>
+            <div class="description">
+                Godzilla Minus One to widowiskowy japoński film kaijū w reżyserii Takashiego Yamazakiego, który przenosi widzów do powojennej Japonii, zmagającej się z odbudową po II wojnie światowej. Akcja rozgrywa się w czasie, gdy kraj znajduje się na krawędzi całkowitego załamania, a pojawienie się Godzilli stawia ludzkość w obliczu jeszcze większego zagrożenia. <br><br>
+
+                Film łączy emocjonujące sceny destrukcji z dramatyczną historią o ludzkiej odwadze, desperacji i przetrwaniu w obliczu niepowstrzymanej siły natury. Dzięki imponującym efektom specjalnym i emocjonalnej głębi, produkcja oferuje nową, mroczniejszą wizję klasycznego potwora, jednocześnie eksplorując traumę narodową i odbudowę nadziei. To epicka opowieść o walce z przeciwnościami i sile wspólnoty.
+            </div>
+        </div>
+        </div>
+
+<!--MODAL-->
+            <div id="myModal" class="modal"></div>
+
+<!--NEW CATEGORY-->
+<!--COMEDIES-->
+            <div class="movieCategory" style="width: 120px;">Comedies:</div>
+            <button class="pre-btn" style="top: 825px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="M384-96 0-480l384-384 68 68-316 316 316 316-68 68Z"/></svg>
+            </button> <!--BUTTON '<'-->
+            <div class="movieTable">
+                <!--1-->
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="Bullet Train" src="img/Comedies/bullet_train.jpg" height="375" width="237">
+                    </div>
+                </div>
+                <!--2-->
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="Baywatch: Słoneczny patrol" src="img/Comedies/baywatch.jpg" height="375" width="237">
+                    </div>
+                </div>
+                <!--3-->
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="Deadpool" src="img/Deadpool.jpg" height="375" width="237">
+                    </div>
+                </div>
+                <!--4-->
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="Kaskader" src="img/FallGuy.jpg" height="375" width="237">
+                    </div>
+                </div>
+                <!--5-->
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="Bad Boys: Ride or Die" src="img/Comedies//bad_boys_ride_or_die.jpg" height="375" width="237">
+                    </div>
+                </div>
+                <!--6-->
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="Kevin sam w domu" src="img/Comedies/home_alone.jpg" height="375" width="237">
+                    </div>
+                </div>
+                <!--7-->
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="Kac Vegas" src="img/Comedies/hangover.jpg" height="375" width="237">
+                    </div>
+                </div>
+                <!--8-->
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="Głupi i głupszy" src="img/Comedies/dumb_and_dumber.jpg" height="375" width="237">
+                    </div>
+                </div>
+                <!--9-->
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="Free Guy" src="img/Comedies/free_guy.jpg" height="375" width="237">
+                    </div>
+                </div>
+                <!--10-->
+                <div class="movieTile">
+                    <div class="movieImage">
+                        <img alt="Pani Doubtfire" src="img/Comedies/mrs_doubtfire.jpg" height="375" width="237">
+                    </div>
+                </div>
+            </div>
+            <button class="nxt-btn" style="top: 825px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="m288-96-68-68 316-316-316-316 68-68 384 384L288-96Z"/></svg>
+            </button> <!--BUTTON '>'-->
+
+<!--NEW CATEGORY-->
+<!--ACTION-->
+<div class="movieCategory" style="width: 120px;">Action:</div>
+<button class="pre-btn" style="top: 1300px;">
+    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="M384-96 0-480l384-384 68 68-316 316 316 316-68 68Z"/></svg>
+</button> <!--BUTTON '<'-->
+<div class="movieTable">
+    <!--1-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Tyler Rake: Ocalenie" src="img/Action/extraction.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--2-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Szybcy i wściekli 7" src="img/Action/furious_seven.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--3-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Avengers: Koniec Gry" src="img/Action/avengers_endgame.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--4-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="John Wick" src="img/Action/john_wick.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--5-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Top Gun: Maverick" src="img/Action/top_gun_maverick.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--6-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="The Gray Man" src="img/Action/gray_man.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--7-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Furiosa" src="img/Action/furiosa.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--8-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Venom" src="img/Action/venom.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--9-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="300" src="img/Action/three_hundred.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--10-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Hitman" src="img/Action/hitman.jpg" height="375" width="237">
+        </div>
+    </div>
+</div>
+<button class="nxt-btn" style="top: 1300px;">
+    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="m288-96-68-68 316-316-316-316 68-68 384 384L288-96Z"/></svg>
+</button> <!--BUTTON '>'-->
+
+
+<!--NEW CATEGORY-->
+<!--ANIMATION-->
+<div class="movieCategory" style="width: 120px;">Animation:</div>
+<button class="pre-btn" style="top: 1775px;">
+    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="M384-96 0-480l384-384 68 68-316 316 316 316-68 68Z"/></svg>
+</button> <!--BUTTON '<'-->
+<div class="movieTable">
+    <!--1-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Shrek" src="img/Animation/shrek.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--2-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="WALL-E" src="img/Animation/wall_e.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--3-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Auta" src="img/Animation/cars.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--4-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Epoka lodowcowa" src="img/Animation/ice_age.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--5-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Nemo" src="img/Animation/finding_nemo.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--6-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Kung Fu Panda" src="img/Animation/kung_fu_panda.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--7-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Minionki" src="img/Animation/minions.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--8-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Król lew" src="img/Animation/lion_king.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--9-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Stalowy gigant" src="img/Animation/iron_giant.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--10-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Jak wytresować smoka" src="img/Animation/how_to_train_your_dragon.jpg" height="375" width="237">
+        </div>
+    </div>
+</div>
+<button class="nxt-btn" style="top: 1775px;">
+    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="m288-96-68-68 316-316-316-316 68-68 384 384L288-96Z"/></svg>
+</button> <!--BUTTON '>'-->
+
+
+<!--NEW CATEGORY-->
+<!--Drama-->
+<div class="movieCategory" style="width: 120px;">Drama:</div>
+<button class="pre-btn" style="top: 2250px;">
+    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="M384-96 0-480l384-384 68 68-316 316 316 316-68 68Z"/></svg>
+</button> <!--BUTTON '<'-->
+<div class="movieTable">
+    <!--1-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Challengers" src="img/Drama/challengers.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--2-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Skazani na Shawshank" src="img/Drama/shawshank_redemption.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--3-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Buntownik z wyboru" src="img/Drama/good_will_hunting.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--4-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Truman Show" src="img/Drama/truman_show.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--5-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Zielona mila" src="img/Drama/green_mile.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--6-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Forrest Gump" src="img/Drama/forrest_gump.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--7-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Cast away: poza światem" src="img/Drama/cast_away.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--8-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="The social network" src="img/Drama/social_network.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--9-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Whiplash" src="img/Drama/whiplash.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--10-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Gatsby" src="img/Drama/great_gatsby.jpg" height="375" width="237">
+        </div>
+    </div>
+</div>
+<button class="nxt-btn" style="top: 2250px;">
+    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="m288-96-68-68 316-316-316-316 68-68 384 384L288-96Z"/></svg>
+</button> <!--BUTTON '>'-->
+
+
+<!--NEW CATEGORY-->
+<!--Horror-->
+<div class="movieCategory" style="width: 120px;">Horror:</div>
+<button class="pre-btn" style="top: 2750px;">
+    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="M384-96 0-480l384-384 68 68-316 316 316 316-68 68Z"/></svg>
+</button> <!--BUTTON '<'-->
+<div class="movieTable">
+    <!--1-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Us" src="img/Horror/us.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--2-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Zakonnica" src="img/Horror/nun.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--3-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Obcy: Romulus" src="img/Horror/alien_romulus.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--4-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Uciekaj!" src="img/Horror/get_out.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--5-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Martwe zło" src="img/Horror/evil_dead_rise.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--6-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="M3GAN" src="img/Horror/m3gan.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--7-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Nie otwieraj oczu" src="img/Horror/bird_box.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--8-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Lśnienie" src="img/Horror/shining.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--9-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Obecność" src="img/Horror/conjuring.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--10-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="IT" src="img/Horror/it.jpg" height="375" width="237">
+        </div>
+    </div>
+</div>
+<button class="nxt-btn" style="top: 2750px;">
+    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="m288-96-68-68 316-316-316-316 68-68 384 384L288-96Z"/></svg>
+</button> <!--BUTTON '>'-->
+
+
+<!--NEW CATEGORY-->
+<!--Sci-Fi-->
+<div class="movieCategory" style="width: 120px;">Sci-Fi:</div>
+<button class="pre-btn" style="top: 3225px;">
+    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="M384-96 0-480l384-384 68 68-316 316 316 316-68 68Z"/></svg>
+</button> <!--BUTTON '<'-->
+<div class="movieTable">
+    <!--1-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Twórca" src="img/Sci-Fi/creator.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--2-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Finch" src="img/Sci-Fi/finch.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--3-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Blade Runner 2049" src="img/Sci-Fi/blade_runner.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--4-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Pacific Rim" src="img/Sci-Fi/pacific_rim.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--5-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Interstellar" src="img/Sci-Fi/interstellar.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--6-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Incepcja" src="img/Sci-Fi/inception.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--7-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Diuna" src="img/Sci-Fi/dune.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--8-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Terminator" src="img/Sci-Fi/terminator_genisys.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--9-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Avatar" src="img/Sci-Fi/avatar.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--10-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Snowpiercer: Arka przyszłości" src="img/Sci-Fi/snowpiercer.jpg" height="375" width="237">
+        </div>
+    </div>
+</div>
+<button class="nxt-btn" style="top: 3225px;">
+    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="m288-96-68-68 316-316-316-316 68-68 384 384L288-96Z"/></svg>
+</button> <!--BUTTON '>'-->
+
+
+
+<!--NEW CATEGORY-->
+<!--Fantasy-->
+<div class="movieCategory" style="width: 120px;">Fantasy:</div>
+<button class="pre-btn" style="top: 3700px;">
+    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="M384-96 0-480l384-384 68 68-316 316 316 316-68 68Z"/></svg>
+</button> <!--BUTTON '<'-->
+<div class="movieTable">
+    <!--1-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Życie PI" src="img/Fantasy/life_of_pi.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--2-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Opowieści z Narnii" src="img/Fantasy/chronicles_of_narnia_the_lion_the_witch_and_the_wardrobe.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--3-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Władca pierścieni" src="img/Fantasy/lord_of_the_rings_the_fellowship_of_the_ring.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--4-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Hobbit" src="img/Fantasy/hobbit_an_unexpected_journey.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--5-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Harry Potter" src="img/Fantasy/harry_potter_and_the_deathly_hallows_part_two.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--6-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Piraci z karaibów" src="img/Fantasy/pirates_of_the_caribbean_on_stranger_tides.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--7-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Zmierzch" src="img/Fantasy/twilight.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--8-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Istoty fantastyczne" src="img/Fantasy/if.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--9-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Jumanji" src="img/Fantasy/jumanji_welcome_to_the_jungle.jpg" height="375" width="237">
+        </div>
+    </div>
+    <!--10-->
+    <div class="movieTile">
+        <div class="movieImage">
+            <img alt="Dungeons & Dragons" src="img/Fantasy/dungeons_and_dragons_honor_among_thieves.jpg" height="375" width="237">
+        </div>
+    </div>
+</div>
+<button class="nxt-btn" style="top: 3700px;">
+    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="m288-96-68-68 316-316-316-316 68-68 384 384L288-96Z"/></svg>
+</button> <!--BUTTON '>'-->
+
+
+<!--FOOTER-->
+            <div id="footer">
+                2024 &copy; All rights reserved
+            </div>
+        </div>
+
+<!--SCRIPT.JS-->
+        <script src="script.js"></script>
+    </body>
+</html>
