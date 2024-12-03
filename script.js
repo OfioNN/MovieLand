@@ -21,7 +21,7 @@ moviesContainers.forEach((container, i) => {
     }
 });
 
-
+  
 // Pobranie pojedynczego elementu przez ID (ID jest unikalne w dokumencie)
 const selectOscarsYear = document.querySelector('#OscarsYear');
 const movieTable = document.querySelector('.movieTable');

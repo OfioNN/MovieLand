@@ -43,7 +43,14 @@ nav a{
     margin-right: 20px;
 }
 
+#navTile a:hover{
+    color: #ff0000;
+    transform: scale(1.3);
+    transition: all 0.3s ease-in-out;
+}
+
 #content{
+    margin-top: 15px;
     width: 100%;
     display: flex;
 }
@@ -66,9 +73,9 @@ nav a{
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 14px;
-    height: 30px;
-    width: 150px;
+    font-size: 18px;
+    height: 36px;
+    width: 180px;
     padding-left: 5px;
     text-align: center;
     margin-left: auto;
@@ -82,9 +89,9 @@ nav a{
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 14px;
-    height: 30px;
-    width: 150px;
+    font-size: 18px;
+    height: 36px;
+    width: 180px;
     margin-top: 10px;
     padding-left: 5px;
     text-align: center;
@@ -98,8 +105,17 @@ nav a{
     text-align: left;
 }
 
-input[type=email]:focus{
+#nameText:focus::placeholder{
+    color: transparent;
+}
+
+#emailText:focus{
     outline: 2px solid #c00021;
+    text-align: left;
+}
+
+#emailText:focus::placeholder{
+    color: transparent;
 }
 
 textarea {
@@ -109,24 +125,30 @@ textarea {
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 14px;
-    height: 100px;
-    width: 350px;
+    font-size: 18px;
+    height: 120px;
+    width: 420px;
     margin-top: 10px;
     padding-left: 5px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-
   }
 
   textarea:focus {
     outline: 2px solid #c00021;
+    text-align: left;
   }
 
   textarea::placeholder {
     line-height: 100px;
     font-family: "Prompt", sans-serif;
+  }
+
+  textarea:focus::placeholder {
+    line-height: 25px;
+    font-family: "Prompt", sans-serif;
+    color: transparent;
   }
 
 #contactSubmit{
@@ -136,13 +158,26 @@ textarea {
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 14px;
-    height: 30px;
-    width: 200px;
+    font-size: 18px;
+    height: 46px;
+    width: 240px;
     margin-top: 10px;
     padding-left: 5px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#contactSubmit:hover{
+    background-color: #ff0000;
+    cursor: pointer;
+}
+
+#contactSubmit:focus{
+    outline: 2px solid #ff0000;
+}
+
+#contactSubmit:active{
+    background-color: #000;
 }
 
 #contactInfoHeader{
@@ -151,7 +186,7 @@ textarea {
     margin-right: 100px;
     margin-left: 50px;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 28px;
     display: flex;
     text-align: center;
 }
@@ -166,35 +201,55 @@ textarea {
     justify-content: center;
 }
 
-#contactInfoTile{
-    width: 50px;
-    height: 50px;
+.contactInfoTile{
+    width: 60px;
+    height: 60px;
     background-color: black;
     color: white;
     margin-right: 10px;
     position: relative;
     overflow: hidden;
-    border-radius: 30px;
-    text-align: center;
-    
+    border-radius: 50px;
+    /* text-align: center; */
 }
 
+.contactInfoTile:hover{
+    background-color: #ddd;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.contactInfoTile:hover .icon-facebook{
+    color: #3b5998;
+}
+
+
+.contactInfoTile:hover .icon-instagram{
+    color: #833ab4;
+}
+
+.contactInfoTile:hover .icon-github-circled{
+    color: #000;
+}
+
+
 #bestMovieText0{
+    margin-top: 50px;
     margin-left: 50px;
     width: 210px;
 }
 
 #bestMovieText1{
     color: #ffffff;
-    font-size: 32px;
+    font-size: 34px;
     display: flex;
 }
 
 #bestMovieText2{
-    margin-left: 50px;
+    margin-left: 45px;
     margin-top: -10px;
     color: #ffffff;
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
 }
 
@@ -206,9 +261,9 @@ textarea {
     justify-content: center;
 }
 
-#bestMovieTile{
-    width: 250px;
-    height: 140px;
+.bestMovieTile{
+    width: 300px;
+    height: 168px;
     background-color: #666666;
     color: white;
     margin-right: 10px;
@@ -217,16 +272,16 @@ textarea {
     border-radius: 10px;
 }
 
-#titleMovie{
+.titleMovie{
     display: flex;
 }
 
-#numberMovie{
+.numberMovie{
     color: #9d0208;
     position: absolute;
     top: 0px;
     left: 0px;
-    font-size: 42px;
+    font-size: 50px;
     font-weight: bold;
     margin-top: 2px;
     margin-left: 10px;
@@ -236,37 +291,36 @@ textarea {
     z-index: 10;
 }
 
-#nameMovie{
+.nameMovie{
     color: #ffffff;
     position: absolute;
     top: 25px;
     left: 0px;
     margin-left: 5px;
     margin-top: 10px;
-    font-size: 26px;
+    font-size: 32px;
     font-weight: 900;
     font-family: "Kanit", sans-serif;
 }
 
-#pointsMovie{
+.pointsMovie{
     color: #f7b32b;
-    top: 100px;
-    left: 75px;
+    top: 120px;
+    left: 95px;
     position: absolute;
     text-align: center;
     font-family: "Prompt", sans-serif;
     font-weight: 600;
 }
 
-#voteMovie{
-    top: 115px;
-    left: 95px;
+.voteMovie{
+    top: 140px;
+    left: 115px;
     position: absolute;
     text-align: center;
     font-family: "Prompt", sans-serif;
 
 }
-
 
 #footer{
     color: white;
