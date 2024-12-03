@@ -28,6 +28,20 @@ body{
     align-items: center;
 }
 
+#logo{
+    font-family: "Rubik Wet Paint", system-ui;
+    color: #c00021;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+}
+
+
+#logo a{
+    display: flex;
+    text-decoration: none;
+    color: #c00021;
+}
 
 nav .navTile:hover {
     transform: rotate(0deg) scale(1.1);
@@ -174,16 +188,6 @@ nav{
     z-index: 100;
 }
 
-#logo{
-    font-family: "Rubik Wet Paint", system-ui;
-    color: #c00021;
-    font-size: 36px;
-    /* margin-top: 10px; */
-    /* margin-bottom: 10px; */
-    display: flex;
-    align-items: center;
-    
-}
 
 .pre-btn{
     position: absolute;
