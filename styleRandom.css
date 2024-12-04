@@ -34,7 +34,6 @@ nav{
 
 
 #navigationBlock{
-    background-color: #000814;
     height: 75px;
     width: 100%;
     display: flex;
@@ -84,11 +83,13 @@ nav .navTile a:hover{
     margin-right: auto;
     display: flex;
     flex-direction: row;
+    border-radius: 15px;
+    margin-top: 25px;
     /* display: flex; */
     /* flex-direction: column; */
 }
 
-#choiceL{
+#choiceFirst{
     /* display: flex; */
     flex-direction: column;
     margin-right: 40px;
@@ -97,7 +98,15 @@ nav .navTile a:hover{
     margin-bottom: 10px;
 }
 
-#choiceR{
+#choiceSecond{
+    /* display: flex; */
+    flex-direction: column;
+    margin-right: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#choiceThird{
     /* display: flex; */
     flex-direction: column;
     margin-right: 20px;
@@ -147,8 +156,8 @@ nav .navTile a:hover{
     background-color: #c00021;
     color: white;
     border-radius: 15px;
-    padding: 5px 10px 5px 10px;
-    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    font-size: 24px;
     font-weight: 700;
     text-align: center;
     border: none;
@@ -168,7 +177,7 @@ nav .navTile a:hover{
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 45%;
+    width: 55%;
     background-color: #222;
     border-radius: 15px;
     padding: 10px;

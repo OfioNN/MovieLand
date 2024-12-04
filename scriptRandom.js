@@ -231,18 +231,18 @@ const movies = [
             duration: "2h 49min" 
         },
         { 
-            title: "Django Unchained", 
-            categories: ["Western", "Action"], 
-            streamingPlatform: "Netflix", 
-            pg: "R", 
-            duration: "2h 45min" 
+            title: "Dune: Part Two", 
+            categories: ["Action", "Sci-Fi", "Adventure" , "Drama"], 
+            streamingPlatform: "HBO Max", 
+            pg: "PG-13", 
+            duration: "2h 46min" 
         },
         { 
-            title: "The Hateful Eight", 
-            categories: ["Western", "Drama"], 
-            streamingPlatform: "HBO Max", 
-            pg: "R", 
-            duration: "3h 7min" 
+            title: "Kingdom of the Planet of the Apes", 
+            categories: ["Action", "Adventure", "Drama", "Sci-Fi", "Thriller"], 
+            streamingPlatform: "Prime Video", 
+            pg: "PG-13", 
+            duration: "2h 25min" 
         },
         { 
             title: "Once Upon a Time in Hollywood", 
@@ -363,6 +363,13 @@ var romanceCheck = $("#romance");
 var fantasyCheck = $("#fantasy");
 var warCheck = $("#war");
 var scifiCheck = $("#scifi");
+var biographyCheck = $("#biography");
+var adventureCheck = $("#adventure");
+var familyCheck = $("#family");
+var musicCheck = $("#music");
+var dramaCheck = $("#drama");
+var animationCheck = $("#animation");
+
 
 var titleMovie = $("#titleMovie");
 var categoryMovie = $("#categoryMovie");
@@ -389,6 +396,12 @@ function randomMovie() {
     if (fantasyCheck.is(":checked")) selectedCategories.push("Fantasy");
     if (warCheck.is(":checked")) selectedCategories.push("War");
     if (scifiCheck.is(":checked")) selectedCategories.push("Sci-Fi");
+    if (biographyCheck.is(":checked")) selectedCategories.push("Biography");
+    if (adventureCheck.is(":checked")) selectedCategories.push("Adventure");
+    if (familyCheck.is(":checked")) selectedCategories.push("Family");
+    if (musicCheck.is(":checked")) selectedCategories.push("Music");
+    if (dramaCheck.is(":checked")) selectedCategories.push("Drama");
+    if (animationCheck.is(":checked")) selectedCategories.push("Animation");
 
     const filteredMovies = movies.filter(movie => {
         if(selectedCategories.length > 0) {
