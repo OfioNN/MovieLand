@@ -55,7 +55,7 @@
 }
 
 .icon-video:before { content: '\e800'; } /* '' */
-.icon-home:before { content: '\e801'; font-size: 28px; } /* '' */
+.icon-home:before { content: '\e801'; font-size: 24px; } /* '' */
 /* .icon-home:hover { color: #a00000;} */
 .icon-facebook:before { content: '\f09a'; font-size: 30px; transform: translateY(50%) translateX(25%); } /* '' */
 .icon-github-circled:before { content: '\f09b';font-size: 30px; transform: translateY(50%) translateX(25%); } /* '' */

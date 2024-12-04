@@ -43,11 +43,6 @@ body{
     color: #c00021;
 }
 
-nav .navTile:hover {
-    transform: rotate(0deg) scale(1.1);
-
-}
-
 nav .navTile a{
     text-decoration: none;
     color: #FFFFFF;
@@ -57,7 +52,7 @@ nav .navTile a{
 }
 
 nav .navTile a:hover{
-    color: #0466c8;
+    color: #c00021;
 }
 
 .movieCategoryContainer {
