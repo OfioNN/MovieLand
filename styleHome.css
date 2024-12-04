@@ -24,6 +24,12 @@ nav{
     align-items: center;
 }
 
+#logo a{
+    display: flex;
+    text-decoration: none;
+    color: #c00021;
+}
+
 nav a{
     text-decoration: none;
     color: #FFFFFF;
@@ -35,11 +41,13 @@ nav a{
     display: flex;
     align-items: center;
     margin-left: auto;
-    margin-right: 20px;
-    margin-bottom: 10px;
+    position: absolute;
+    right: 15px;
+    top: -10px;
     padding-right: 12px;
     padding-left: 12px;
     font-weight: 600;
+    height: 80px;
     background-color: #c00021;
     transition: all 0.2s ease-in-out;
     border-radius: 0 0 20px 20px;
@@ -48,13 +56,14 @@ nav a{
 #logIn:hover{
     background-color: #0466c8;
     cursor: pointer;
+    transform: translateY(10px);
 }
 
 #text{
     width: 100%;
     text-align: center;
     color: #ffffff;
-    font-size: 36px;
+    font-size: 42px;
     font-weight: 700;
     margin-top: 100px;
     letter-spacing: 2px;
@@ -76,10 +85,11 @@ nav a{
 }
 
 #register{
+    font-family: "Prompt", sans-serif;
     background-color: #c00021;
     color: #ffffff;
-    font-size: 14px;
-    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    padding: 10px 15px 10px 15px;
     margin: 10px;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
@@ -94,10 +104,11 @@ nav a{
 }
 
 #info{
+    font-family: "Prompt", sans-serif;
     background-color: #c00021;
     color: #ffffff;
-    font-size: 14px;
-    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    padding: 10px 15px 10px 15px;
     margin: 10px;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
