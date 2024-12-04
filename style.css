@@ -100,6 +100,21 @@ nav{
     display: flex;
 }
 
+#scrollButton{
+    position: fixed;
+    display: none;
+    width: 25px;
+    height: 25px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #850016;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 50;
+}
+
 .movieTable{
     position: relative;
     overflow: hidden;
