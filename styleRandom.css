@@ -114,29 +114,45 @@ nav .navTile a:hover{
     margin-bottom: 10px;
 }
 
-.checkboxCategory{
-    border-radius: 25px;
-    margin: 5px;
-    border-color: aqua;
-    accent-color: #c00021;
-    background-color: aqua;
-    /* outline: 2px dashed #c00021; */
-}
-
-.checkboxCategory::before{
-    border-radius: 25px;
-    margin: 5px;
-    border-color: aqua;
-    /* outline: 2px dashed #c00021; */
-}
-
-.checkboxCategory:hover{
+input[type="checkbox"]{
+    appearance: none;
+    height: 25px;
+    width: 25px;
+    background-color: #adadad;
+    border-radius: 10px;
     cursor: pointer;
 }
 
-.textCheckbox{
+input[type="checkbox"]:after{
+    position: relative;
+    top: -15px;
+    left: -5px;
+    font-family: 'Material Symbols Outlined';
+    content: "\e5ca";
+    font-weight: 900;
+    font-size: 42px;
     color: white;
+    display: none;
+}
+
+input[type="checkbox"]:hover{
+    background-color: #666;
+}
+
+input[type="checkbox"]:checked{
+    background-color: #c00021;
+}
+
+input[type="checkbox"]:checked:after{
+    display: block;
+}
+
+label{
+    font-family: "Prompt", sans-serif;
     font-size: 18px;
+    color: white;
+    margin-left: 5px;
+    cursor: pointer;
 }
 
 .checkPanel{
@@ -182,6 +198,8 @@ nav .navTile a:hover{
     border-radius: 15px;
     padding: 10px;
 }
+
+
 
 #noResultsShow{
     display: none;
