@@ -193,13 +193,11 @@ label{
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 55%;
+    width: 60%;
     background-color: #222;
     border-radius: 15px;
     padding: 10px;
 }
-
-
 
 #noResultsShow{
     display: none;
