@@ -103,16 +103,20 @@ nav{
 #scrollButton{
     position: fixed;
     display: none;
-    width: 25px;
-    height: 25px;
-    bottom: 20px;
-    right: 20px;
+    width: 30px;
+    height: 30px;
+    bottom: 25px;
+    right: 25px;
     background-color: #850016;
     border: none;
     border-radius: 50px;
     padding: 10px;
     cursor: pointer;
     z-index: 50;
+}
+
+#scrollButton:hover{
+    background-color: #c00021;
 }
 
 .movieTable{
