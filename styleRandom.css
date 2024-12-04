@@ -4,16 +4,48 @@
 }
 
 body{
-    background-color: #222222;
+    background-color: #000814;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
+
+.navTile{
+    margin-top: 10px;
+    color: #ffffff;
+    height: 25px;
+    text-align: center;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.5s ease-in-out;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
+
 nav{
-    height: 65px;
+    background-color: #000000;
+    height: 75px;
     width: 100%;
     display: flex;
+}
+
+
+#navigationBlock{
+    background-color: #000814;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-right: 6px;
+    background-color: #000000;
+    align-items: center;
+}
+
+#mode:hover{
+    cursor: pointer;
 }
 
 #logo{
@@ -24,13 +56,28 @@ nav{
     align-items: center;
 }
 
-nav a{
+
+#logo a{
+    display: flex;
+    text-decoration: none;
+    color: #c00021;
+}
+
+nav .navTile a{
     text-decoration: none;
     color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+nav .navTile a:hover{
+    color: #c00021;
 }
 
 #choice{
-    background-color: #666;
+    font-family: "Prompt", sans-serif;
+    background-color: #222;
     width: fit-content;
     height: fit-content;
     margin-left: auto;
@@ -89,10 +136,158 @@ nav a{
 }
 
 #submitt{
+    font-family: "Prompt", sans-serif;
     width: fit-content;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#randomButton{
+    background-color: #c00021;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+}
+
+#randomButton:hover{
+    background-color: #ff0000;
+    cursor: pointer;
+}
+
+#showInfo{
+    display: none;
+}
+
+#resultMovie{
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    background-color: #222;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#noResultsShow{
+    display: none;
+}
+
+#noResults{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    background-color: #222;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#noResultsTxt{
+    font-family: "Prompt", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+#leftInfo{
+    width: 70%;
+    text-align: center;
+    padding-right: 10px;
+}
+
+#rightInfo{
+    width: 30%;
+    border-left: #c00021 dotted 5px;
+        padding-top: 25px;
+        text-align: center;
+}
+
+
+#titleTxt{
+    font-family: "Prompt", sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+#titleMovie{
+    margin-top: -15px;
+    font-family: "Prompt", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+#categoryTxt{
+    font-family: "Prompt", sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+#categoryMovie{
+    font-family: "Prompt", sans-serif;
+    font-size: 28px;
+    margin-top: -15px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+#pgTxt{
+    font-family: "Prompt", sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+#pgMovie{
+    font-family: "Prompt", sans-serif;
+    font-size: 28px;
+    margin-top: -15px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+#durationTxt{
+    font-family: "Prompt", sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+#durationMovie{
+    font-family: "Prompt", sans-serif;
+    font-size: 28px;
+    margin-top: -15px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+#streamTxt{
+    font-family: "Prompt", sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+#streamMovie{
+    font-family: "Prompt", sans-serif;
+    font-size: 28px;
+    margin-top: -15px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
 }
 
 #footer{
